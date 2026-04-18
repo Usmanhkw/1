@@ -3,75 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Usman Mobile Repairing Centre | High-End Tech Solutions</title>
+    <title>Usman Mobile & Electronics | Professional Solutions</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <style>
         :root {
-            --primary: #007bff; /* Repair blue */
-            --secondary: #25d366; /* WhatsApp green */
-            --tech-dark: #121212; /* Dark mode background */
-            --tech-card: #1e1e1e; /* Card background */
-            --text-main: #e0e0e0;
+            --primary: #2575fc; 
+            --electric: #ff9f43; 
+            --secondary: #25d366; 
+            --tech-dark: #101215; 
+            --tech-card: #191c21; 
+            --text-main: #f0f0f0;
             --text-sub: #b0b0b0;
         }
 
-        * { box-sizing: border-box; scroll-behavior: smooth; }
+        * { box-sizing: border-box; scroll-behavior: smooth; font-family: 'Segoe UI', Arial, sans-serif; }
         body { 
-            font-family: 'Segoe UI', Roboto, sans-serif; 
             margin: 0; 
             line-height: 1.6; 
             color: var(--text-main); 
             background: var(--tech-dark);
-            /* Circuit board pattern overlay */
-            background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0MCIgaGVpZ2h0PSI0MCIgdmlld0JveD0iMCAwIDQwIDQwIj48ZyBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxnIGZpbGw9IiM5QzlDOTkiIGZpbGwtb3BhY2l0eT0iMC4wNSI+PHBhdGggZD0iTTAgMGg0MHY0MEgwVjB6bTIwIDIwaDIwdjIwSDIWMjB6TTAgMjBoMjB2MjBIMFYyMHoyMCAwaDIwdjIwSDIwVjB6Ii8+PC9nPjwvZz48L3N2Zz4=');
+            background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI4MCIgaGVpZ2h0PSI4MCIgdmlld0JveD0iMCAwIDgwIDgwIj48ZyBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxnIGZpbGw9IiNGRkYiIGZpbGwtb3BhY2l0eT0iMC4wMyI+PHBhdGggZD0iTTAgMGg4MHY4MEgwVjB6bTQwIDQwMWg0MHY0MEg0MFY0MHpNMCA0MGg0MHY0MEgwVjQwem00MCAwaDQwVjQwSDQwVjB6Ii8+PC9nPjwvZz48L3N2Zz4=');
         }
 
-        /* Navigation */
-        nav { background: rgba(18, 18, 18, 0.95); color: white; padding: 15px 5%; display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; z-index: 1000; border-bottom: 2px solid var(--primary); backdrop-filter: blur(5px); }
-        .logo { font-size: 1.4rem; font-weight: bold; color: var(--primary); text-transform: uppercase; letter-spacing: 1px; }
-        .nav-links a { color: var(--text-main); text-decoration: none; margin-left: 20px; font-size: 0.85rem; text-transform: uppercase; font-weight: 600; }
+        nav { background: rgba(16, 18, 21, 0.96); padding: 15px 5%; display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; z-index: 1000; border-bottom: 2px solid var(--primary); backdrop-filter: blur(5px); }
+        .logo { font-size: 1.3rem; font-weight: bold; color: var(--primary); text-transform: uppercase; letter-spacing: 1px; }
+        .nav-links a { color: var(--text-main); text-decoration: none; margin-left: 15px; font-size: 0.8rem; text-transform: uppercase; font-weight: 600; }
 
-        /* Hero Section */
         .hero { 
-            background: linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.85)), url('https://images.unsplash.com/photo-1597740985671-2a8a3b80502e?auto=format&fit=crop&w=1200');
+            background: linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.9)), url('https://images.unsplash.com/photo-1597740985671-2a8a3b80502e?auto=format&fit=crop&w=1200');
             background-size: cover; background-position: center;
-            height: 80vh; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; color: white; padding: 0 20px;
+            height: 75vh; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; color: white; padding: 0 20px;
         }
-        .hero h1 { font-size: 3rem; margin-bottom: 10px; text-transform: uppercase; letter-spacing: 2px; }
+        .hero h1 { font-size: 3.2rem; margin-bottom: 10px; font-weight: 800; text-shadow: 0 4px 10px rgba(0,0,0,0.5); }
         .hero p { font-size: 1.3rem; max-width: 700px; color: var(--text-sub); }
 
-        /* Buttons */
-        .btn-group { display: flex; gap: 15px; margin-top: 30px; flex-wrap: wrap; justify-content: center; }
-        .btn { padding: 15px 30px; border-radius: 5px; text-decoration: none; font-weight: bold; display: flex; align-items: center; transition: 0.3s; color: white; border: none; font-size: 1rem; cursor: pointer; }
+        .btn-group { display: flex; gap: 15px; margin-top: 35px; flex-wrap: wrap; justify-content: center; }
+        .btn { padding: 15px 30px; border-radius: 50px; text-decoration: none; font-weight: bold; display: flex; align-items: center; transition: 0.3s; color: white; border: none; }
         .btn-call { background: var(--primary); }
         .btn-wa { background: var(--secondary); }
-        .btn:hover { transform: translateY(-3px); box-shadow: 0 5px 20px rgba(37, 211, 102, 0.4); }
-        .btn-call:hover { box-shadow: 0 5px 20px rgba(0, 123, 255, 0.4); }
-        .btn i { margin-right: 10px; font-size: 1.2rem; }
+        .btn:hover { transform: translateY(-3px); box-shadow: 0 5px 15px rgba(0,0,0,0.3); }
+        .btn i { margin-right: 10px; font-size: 1.1rem; }
 
-        /* Section Styling */
         section { padding: 80px 10% 60px; }
-        .section-title { text-align: center; margin-bottom: 50px; }
-        .section-title h2 { font-size: 2.2rem; color: white; margin-bottom: 10px; text-transform: uppercase; letter-spacing: 1px; }
-        .section-title .bar { width: 80px; height: 4px; background: var(--primary); margin: 0 auto; }
+        .section-title { text-align: center; margin-bottom: 60px; }
+        .section-title h2 { font-size: 2.5rem; color: white; margin-bottom: 5px; text-transform: uppercase; }
+        .section-title .bar { width: 80px; height: 5px; background: var(--primary); margin: 0 auto; border-radius: 5px; }
 
-        /* Services Grid */
-        .services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; }
-        .service-card { background: var(--tech-card); padding: 40px 30px; border-radius: 12px; text-align: center; border: 1px solid #333; transition: 0.4s; }
-        .service-card:hover { border-color: var(--primary); transform: translateY(-5px); background: #252525; }
-        .service-card i { font-size: 3rem; color: var(--primary); margin-bottom: 25px; display: inline-block; }
+        .content-area { display: flex; gap: 40px; align-items: center; flex-wrap: wrap; margin-bottom: 50px; }
+        .icon-box-large { flex: 1; min-width: 300px; text-align: center; }
+        .icon-box-large i { font-size: 120px; color: var(--primary); filter: drop-shadow(0 0 20px rgba(37, 117, 252, 0.5)); }
+        .content-grid { flex: 2; display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 25px; }
 
-        /* Accessories Grid */
-        .acc-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; margin-top: 40px; }
-        .acc-item { background: var(--tech-card); border-radius: 10px; padding: 20px; text-align: center; border: 1px solid #333; transition: 0.3s; }
-        .acc-item:hover { transform: scale(1.03); border-color: var(--secondary); }
-        .acc-item i { font-size: 2.5rem; color: var(--text-sub); margin-bottom: 15px; }
-        .acc-item h4 { margin: 10px 0 5px; color: white; }
-        .acc-item p { font-size: 0.9rem; color: var(--text-sub); margin: 0; }
+        .card { background: var(--tech-card); padding: 30px; border-radius: 15px; border: 1px solid #333; transition: 0.4s; text-align: center; }
+        .card:hover { border-color: var(--primary); transform: translateY(-5px); background: #20242a; }
+        .card i { font-size: 2.8rem; color: var(--primary); margin-bottom: 20px; }
+        .card.electric-card i { color: var(--electric); }
 
-        /* Floating WhatsApp */
-        .floating-wa { position: fixed; bottom: 30px; right: 30px; background: var(--secondary); color: white; width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 30px; box-shadow: 0 4px 15px rgba(0,0,0,0.5); z-index: 1000; text-decoration: none; animation: pulse 2s infinite; }
+        .floating-wa { position: fixed; bottom: 30px; right: 30px; background: var(--secondary); color: white; width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 30px; box-shadow: 0 5px 15px rgba(0,0,0,0.5); z-index: 1000; text-decoration: none; animation: pulse 2s infinite; }
 
         @keyframes pulse {
             0% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7); }
@@ -79,94 +68,104 @@
             100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
         }
 
-        /* Contact Section */
-        .contact-info { background: #0a0a0a; color: white; text-align: center; padding: 80px 10%; border-top: 2px solid #333; }
+        .contact-info { background: #0c0e11; color: white; text-align: center; padding: 80px 10%; border-top: 2px solid #222; }
         .address-box { margin-bottom: 30px; }
         .address-box i { color: var(--primary); font-size: 1.8rem; margin-bottom: 15px; }
-        .address-box p { font-size: 1.1rem; color: var(--text-main); }
 
-        footer { text-align: center; padding: 25px; background: #050505; color: #555; font-size: 0.85rem; border-top: 1px solid #222; }
+        footer { text-align: center; padding: 25px; background: #080a0c; color: #666; font-size: 0.85rem; border-top: 1px solid #1a1a1a; }
 
-        /* Responsive */
+        .img-animate { animation: float 6s ease-in-out infinite; }
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-15px); }
+            100% { transform: translateY(0px); }
+        }
+
         @media (max-width: 768px) {
-            .hero h1 { font-size: 2rem; }
-            .hero p { font-size: 1.1rem; }
+            .hero h1 { font-size: 2.2rem; }
             section { padding: 60px 5% 40px; }
+            .content-area { flex-direction: column; }
         }
     </style>
 </head>
 <body>
 
 <nav>
-    <div class="logo">Usman Mobile</div>
+    <div class="logo">Usman Mobile & Electronics</div>
     <div class="nav-links">
-        <a href="#services">Services</a>
-        <a href="#accessories">Accessories</a>
+        <a href="#mobiles">Mobiles</a>
+        <a href="#electronics">Electronics</a>
         <a href="#contact">Contact</a>
     </div>
 </nav>
 
 <section class="hero">
-    <h1 data-aos="zoom-in">Usman Mobile Repairing Centre</h1>
-    <p data-aos="fade-up" data-aos-delay="200">The most trusted name in Pattoki for advanced hardware engineering and software solutions.</p>
+    <h1 data-aos="zoom-in">Usman Mobile & Electronics</h1>
+    <p data-aos="fade-up" data-aos-delay="200">The most trusted name in your town for best mobile repairing and mobile accessories.</p>
     <div class="btn-group" data-aos="fade-up" data-aos-delay="400">
-        <a href="tel:+923206882843" class="btn btn-call"><i class="fas fa-phone-alt"></i> Call: 0320-6882843</a>
+        <a href="tel:+923206882843" class="btn btn-call"><i class="fas fa-phone-alt"></i> Call Now</a>
         <a href="https://wa.me/923206882843" class="btn btn-wa"><i class="fab fa-whatsapp"></i> WhatsApp Chat</a>
     </div>
 </section>
 
-<section id="services">
+<section id="mobiles">
     <div class="section-title" data-aos="fade-up">
-        <h2>Expert Services</h2>
+        <h2>Mobile Repairing</h2>
         <div class="bar"></div>
     </div>
-    <div class="services-grid">
-        <div class="service-card" data-aos="fade-up" data-aos-delay="100">
-            <i class="fas fa-microchip"></i>
-            <h3>Hardware Repair</h3>
-            <p>High-level motherboard engineering, SMD component replacement, charging IC issues, and dead phone recovery.</p>
+    
+    <div class="content-area">
+        <div class="icon-box-large" data-aos="fade-right">
+            <i class="fas fa-tools img-animate"></i>
         </div>
-        <div class="service-card" data-aos="fade-up" data-aos-delay="200">
-            <i class="fas fa-mobile-alt"></i>
-            <h3>Screen Replacement</h3>
-            <p>Precision installation of original quality LCDs, OLEDs, and touch screens for all smartphone brands.</p>
-        </div>
-        <div class="service-card" data-aos="fade-up" data-aos-delay="300">
-            <i class="fas fa-satellite-dish"></i>
-            <h3>Network & Software</h3>
-            <p>Official flashing, FRP unlocking, software troubleshooting, and OS updates for Android and iOS.</p>
+        
+        <div class="content-grid">
+            <div class="card" data-aos="fade-up" data-aos-delay="100">
+                <i class="fas fa-microchip"></i>
+                <h3>Hardware Engineering</h3>
+                <p>Professional circuit board and SMD component level repairing for all smartphones.</p>
+            </div>
+            <div class="card" data-aos="fade-up" data-aos-delay="200">
+                <i class="fas fa-mobile-alt"></i>
+                <h3>LCD & Touch</h3>
+                <p>Premium quality screen and glass replacements with perfect fitting.</p>
+            </div>
+            <div class="card" data-aos="fade-up" data-aos-delay="300">
+                <i class="fas fa-headphones-alt"></i>
+                <h3>Mobile Accessories</h3>
+                <p>Authentic chargers, cables, earbuds, and premium protective cases.</p>
+            </div>
         </div>
     </div>
 </section>
 
-<section id="accessories" style="background: #0a0a0a;">
+<section id="electronics" style="background-color: #0c0e11;">
     <div class="section-title" data-aos="fade-up">
-        <h2>Premium Accessories</h2>
+        <h2>Electronics & Electric</h2>
         <div class="bar"></div>
     </div>
-    <p style="text-align: center; color: var(--text-sub); max-width: 600px; margin: 0 auto 40px;" data-aos="fade-up">
-        Enhance your device with our high-quality mobile accessories, available right here at Usman Mobile Centre.
-    </p>
-    <div class="acc-grid">
-        <div class="acc-item" data-aos="flip-left" data-aos-delay="100">
-            <i class="fas fa-plug"></i>
-            <h4>Chargers</h4>
-            <p>Fast chargers & adapters</p>
+    
+    <div class="content-area">
+        <div class="content-grid">
+            <div class="card electric-card" data-aos="fade-up" data-aos-delay="100">
+                <i class="fas fa-lightbulb"></i>
+                <h3>LED & Lighting</h3>
+                <p>Wide variety of energy-efficient LED bulbs and modern home lighting.</p>
+            </div>
+            <div class="card electric-card" data-aos="fade-up" data-aos-delay="200">
+                <i class="fas fa-toggle-on"></i>
+                <h3>Switch & Sockets</h3>
+                <p>Top quality switches, sockets, and complete board fitting accessories.</p>
+            </div>
+            <div class="card electric-card" data-aos="fade-up" data-aos-delay="300">
+                <i class="fas fa-bolt"></i>
+                <h3>Electric Gear</h3>
+                <p>Cables, extension boards, and high-performance electronic items.</p>
+            </div>
         </div>
-        <div class="acc-item" data-aos="flip-left" data-aos-delay="200">
-            <i class="fas fa-bolt"></i>
-            <h4>Cables</h4>
-            <p>Durable Type-C, Lightning</p>
-        </div>
-        <div class="acc-item" data-aos="flip-left" data-aos-delay="300">
-            <i class="fas fa-headphones"></i>
-            <h4>Audio</h4>
-            <p>Earphones & AirPods</p>
-        </div>
-        <div class="acc-item" data-aos="flip-left" data-aos-delay="400">
-            <i class="fas fa-shield-alt"></i>
-            <h4>Protection</h4>
-            <p>Cases & Glass Protectors</p>
+        
+        <div class="icon-box-large" data-aos="fade-left">
+            <i class="fas fa-bolt img-animate" style="color: var(--electric); filter: drop-shadow(0 0 20px rgba(255, 159, 67, 0.5));"></i>
         </div>
     </div>
 </section>
@@ -181,11 +180,11 @@
         <p>Hussain Khan Wala, Chak No. 8<br>Pattoki, Punjab, Pakistan</p>
     </div>
     <div class="address-box" data-aos="fade-up">
-        <i class="fas fa-user-tie"></i>
+        <i class="fas fa-user-circle"></i>
         <p>Proprietor: Usman Sarwar</p>
     </div>
     <div class="btn-group" data-aos="fade-up">
-        <a href="tel:+923206882843" class="btn btn-call"><i class="fas fa-phone-alt"></i> 0320 6882843</a>
+        <a href="tel:+923206882843" class="btn btn-call"><i class="fas fa-phone-alt"></i> 0320-6882843</a>
     </div>
 </section>
 
@@ -194,14 +193,15 @@
 </a>
 
 <footer>
-    &copy; 2026 Usman Mobile Repairing Centre | All Rights Reserved.
+    &copy; 2026 Usman Mobile & Electronics Centre | All Rights Reserved
 </footer>
 
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
   AOS.init({
-    duration: 1000, /* Animation lasts 1 second */
-    once: true /* Only animate the first time the user scrolls to it */
+    duration: 1000,
+    once: true,
+    offset: 150
   });
 </script>
 
